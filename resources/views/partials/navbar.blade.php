@@ -20,7 +20,7 @@
       <span class="nav-item">
         <a class="button is-primary" href="{{ url('/jobs/create') }}">
           <span class="icon">
-            <i class="fa fa-address-card-o"></i>
+           <i class="fa fa-paw" aria-hidden="true"></i>
           </span>
           <span>免费发布招聘信息</span>
         </a>

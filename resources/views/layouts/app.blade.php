@@ -12,8 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -36,7 +35,6 @@
 
         @yield('script.footer')
         <!-- Scripts -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="/js/app.js"></script>
 
     </body>
