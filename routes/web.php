@@ -15,14 +15,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/filter', 'Jobcontroller@filter');
-
-// Route::get('/testurl', function(){
-// 	$email = 'guest@zhaogongzuo.ca';
-// 	$password = 'guest123';
-// 	Auth::attempt(['email' => $email, 'password' => $password]);
-// 	return redirect('/jobs/create');
-// });
+Route::get('/filter', 'JobController@filter');
 
 Route::get('/', function () {
 	return view('welcome');
@@ -30,7 +23,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('jobs', 'Jobcontroller');
+Route::resource('jobs', 'JobController');
 
 Route::get('/home', 'HomeController@index');
 
