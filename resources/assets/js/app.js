@@ -6,7 +6,6 @@
  */
 
  require('./bootstrap');
- require('./analysis');
  require('./axios.min');
 
 /**

@@ -12,30 +12,39 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
             ]); ?>
         </script>
-    </head>
-    <body>
-        <div id="app">
-            @section('navbar')
-            @include('partials.navbar')
-            @show
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            @yield('content')
+          ga('create', 'UA-74984891-2', 'auto');
+          ga('send', 'pageview');
+      </script>
+  </head>
+  <body>
+    <div id="app">
+        @section('navbar')
+        @include('partials.navbar')
+        @show
 
-            @section('footer')
-            <info-footer></info-footer>
-            @show        
-        </div>
+        @yield('content')
 
-        @yield('script.footer')
-        <!-- Scripts -->
-        <script src="/js/app.js"></script>
+        @section('footer')
+        <info-footer></info-footer>
+        @show        
+    </div>
 
-    </body>
-    </html>
+    @yield('script.footer')
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+
+</body>
+</html>
