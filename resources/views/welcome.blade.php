@@ -11,7 +11,7 @@
 				多伦多找工作招聘平台
 			</h2>
 			<div class="block">
-				<a class="button is-primary is-large" href="/jobs" >浏览全部工作</a>
+				<a class="button is-primary is-large" href="/jobs" >浏览所有工作</a>
 			</div>
 		</div>
 	</div>
