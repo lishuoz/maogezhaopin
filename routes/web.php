@@ -17,6 +17,14 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/filter', 'JobController@filter');
 
+Route::get('/policy', function(){
+	return view('footers.policy');
+});
+
+Route::get('/contact', function(){
+	return view('footers.contact');
+});
+
 Route::get('/', function () {
 	return view('welcome');
 });
