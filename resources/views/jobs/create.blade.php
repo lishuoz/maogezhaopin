@@ -13,7 +13,7 @@
 				<a href="/jobs/create">创建工作信息</a>
 			</h1>
 			<h2 class="subtitle">
-				Hero subtitle
+				免费发布招聘信息
 			</h2>
 		</div>
 	</div>
